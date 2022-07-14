@@ -3,7 +3,7 @@ import React from 'react'
 const FooterComponent = () => {
     return (
         <div>
-            <footer className = "footer">
+            <footer className = "footer fixed-bottom text-center">
                  <span className="text-muted">All Rights Reserved 2021 @JavaGuides</span>
             </footer>
         </div>
