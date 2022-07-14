@@ -1,8 +1,5 @@
 package com.luisadorno.employeemanagerserver.domain.employee.services;
 
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
-
 import com.luisadorno.employeemanagerserver.domain.employee.exception.ResourceNotFoundException;
 import com.luisadorno.employeemanagerserver.domain.employee.model.Employee;
 
