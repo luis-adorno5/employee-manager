@@ -1,10 +1,10 @@
-package com.luisadorno.employeemanagerserver.domain.employee.exception;
+package com.luisadorno.employeemanagerserver.domain.core.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
 @ResponseStatus(value = HttpStatus.NOT_FOUND)
-public class ResourceNotFoundException extends Exception {
+public class ResourceNotFoundException extends RuntimeException {
     public ResourceNotFoundException(String msg) {
         super(msg);
     }

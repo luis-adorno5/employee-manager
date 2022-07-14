@@ -1,6 +1,6 @@
 package com.luisadorno.employeemanagerserver.domain.employee.services;
 
-import com.luisadorno.employeemanagerserver.domain.employee.exception.ResourceNotFoundException;
+import com.luisadorno.employeemanagerserver.domain.core.exception.ResourceNotFoundException;
 import com.luisadorno.employeemanagerserver.domain.employee.model.Employee;
 
 public interface EmployeeService {

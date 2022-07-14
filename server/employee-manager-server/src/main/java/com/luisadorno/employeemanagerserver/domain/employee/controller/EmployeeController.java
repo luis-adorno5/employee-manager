@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.luisadorno.employeemanagerserver.domain.employee.exception.ResourceNotFoundException;
 import com.luisadorno.employeemanagerserver.domain.employee.model.Employee;
 import com.luisadorno.employeemanagerserver.domain.employee.services.EmployeeService;
 
@@ -40,18 +39,17 @@ public class EmployeeController {
     }
 
     @GetMapping("{id}")
-    public ResponseEntity<Employee> getEmployeeById(@PathVariable("id") long id) throws ResourceNotFoundException {
+    public ResponseEntity<Employee> getEmployeeById(@PathVariable("id") long id) {
         return ResponseEntity.ok(employeeService.getEmployeeById(id));
     }
 
     @PutMapping("{id}")
-    public ResponseEntity<Employee> updateEmployee(@PathVariable("id") long id, @RequestBody Employee employeeDetails)
-            throws ResourceNotFoundException {
+    public ResponseEntity<Employee> updateEmployee(@PathVariable("id") long id, @RequestBody Employee employeeDetails) {
         return ResponseEntity.ok(employeeService.updateEmployee(id, employeeDetails));
     }
 
     @DeleteMapping("{id}")
-    public ResponseEntity<HttpStatus> deleteEmployee(@PathVariable("id") long id) throws ResourceNotFoundException {
+    public ResponseEntity<HttpStatus> deleteEmployee(@PathVariable("id") long id) {
         employeeService.deleteEmployee(id);
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }

@@ -3,7 +3,7 @@ package com.luisadorno.employeemanagerserver.domain.employee.services;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.luisadorno.employeemanagerserver.domain.employee.exception.ResourceNotFoundException;
+import com.luisadorno.employeemanagerserver.domain.core.exception.ResourceNotFoundException;
 import com.luisadorno.employeemanagerserver.domain.employee.model.Employee;
 import com.luisadorno.employeemanagerserver.domain.employee.repository.EmployeeRepository;
 
